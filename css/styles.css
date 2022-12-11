@@ -100,6 +100,10 @@ p {
 /*Header*/
 
 .header {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+
     border-bottom: 1px solid var(--header-line-border-color);
 }
 
@@ -263,6 +267,9 @@ p {
     /* Section */
 
 .section {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -534,6 +541,9 @@ p {
 /* Footer */
 
 .footer {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 60px;
     padding-bottom: 60px;
 
