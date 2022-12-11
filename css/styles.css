@@ -8,8 +8,9 @@
     --logo-header: #000000;
     --logo-footer: #FFFFFF;
     --header-line-border-color: #ECECEC;
-    --slogan-text-color: #FFFFFF;    
-    --team-backgrond-color: #F5F4FA;
+    --slogan-text-color: #FFFFFF;
+    --advantages-box-background-color: #F5F4FA;
+    --team-background-color: #F5F4FA;
     --socials-icon-fill: #AFB1B8;
     --clients-icon-fill: #AFB1B8;
     --clients-border-color: #AFB1B8;
@@ -278,13 +279,26 @@ p {
 
         /* Advantages */
 
-.advantage-list {
+.advantages-list {
     display: flex;
     justify-content: space-between;
 }
 
 .advantages .item {
     max-width: 270px;
+}
+
+.advantages-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+
+    background-color: var(--advantages-box-background-color);
 }
 
 .advantages .title {
@@ -319,7 +333,7 @@ p {
     padding-top: 94px;
     padding-bottom: 94px;
 
-    background-color: var(--team-backgrond-color);
+    background-color: var(--team-background-color);
 }
 
 .team .section-title {
@@ -397,8 +411,7 @@ p {
     border-radius: 4px;
 }
 
-.clients-link:hover .clients-icon
- {
+.clients-link:hover .clients-icon {
     fill: var(--accent-color);    
 }
 
@@ -411,7 +424,6 @@ p {
     width: 106px;
     height: 60px;
         
-    background-color: var(--main-background-color);
     fill: var(--clients-icon-fill);
 }
 
