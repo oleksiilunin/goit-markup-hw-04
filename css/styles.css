@@ -1,21 +1,24 @@
 
 :root {
+    --main-background-color: #FFFFFF;
+    --secondary-background-color: #2F303A;
     --primary-text-color: #757575;
-    --secondary-text-color: #212121;
-    --slogan-text-color: #FFFFFF;
-    --location-text-color: #FFFFFF;
+    --secondary-text-color: #212121;    
     --accent-color: #2196F3;
     --logo-header: #000000;
     --logo-footer: #FFFFFF;
-    --main-background-color: #FFFFFF;
-    --secondary-background-color: #2F303A;
+    --header-line-border-color: #ECECEC;
+    --slogan-text-color: #FFFFFF;    
     --team-backgrond-color: #F5F4FA;
-    --footer-text-color: #FFFFFF96;
+    --socials-icon-fill: #AFB1B8;
+    --clients-icon-fill: #AFB1B8;
+    --clients-border-color: #AFB1B8;
     --btn-accent-text-color: #FFFFFF;
     --btn-filter-bcg-color: #F5F4FA;
-    --btn-filter-border-color: transparent;
-    --header-line-border-color: #ECECEC;
+    --btn-filter-border-color: transparent;    
     --project-caption-border-color: #EEEEEE;
+    --footer-text-color: #FFFFFF96;
+    --location-text-color: #FFFFFF;
 }
 
 html {
@@ -51,6 +54,11 @@ p {
     margin: 0;
 }
 
+.button {
+    padding: 0;
+    border: 0;
+}
+
 .list {
     margin-top: 0;
     margin-bottom: 0;
@@ -62,7 +70,6 @@ p {
 .link {
     text-decoration: none;
     font-style: none;
-    /* outline: currentColor; */
 }
 
 .visually-hidden {
@@ -237,10 +244,10 @@ p {
     cursor: pointer;
 }
 
-.btn-order:hover,
+/* .btn-order:hover,
 .btn-order:focus {
     outline: 0;
-}
+} */
 
     /* Section */
 
@@ -369,6 +376,45 @@ p {
     height: auto;
 }
 
+        /* Clients */
+
+.clients .section-title {
+    margin-bottom: 50px;
+}
+
+.clients-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients .link {
+    display: block; 
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+
+    border: 1px solid var(--clients-border-color);
+    border-radius: 4px;
+}
+
+.clients-link:hover .clients-icon
+ {
+    fill: var(--accent-color);    
+}
+
+.clients-link:hover {
+    border-color: var(--accent-color);
+}
+
+.clients-icon {
+    display: block;
+    width: 106px;
+    height: 60px;
+        
+    background-color: var(--main-background-color);
+    fill: var(--clients-icon-fill);
+}
+
         /* Portfolio - Filter */
 
 .btn-filter {
@@ -387,17 +433,21 @@ p {
     letter-spacing: 0.03em;
 
     cursor: pointer;
+
+    border: none;
 }
 
 .btn-filter:hover,
-.btn-filter:focus {
+.btn-filter:focus,
+.btn-filter:active {
     background-color: var(--accent-color);
     color: var(--btn-accent-text-color);
     border-color: var(--btn-filter-border-color);
 
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-
-    outline: none;
+    
+    border: none;
+    /* outline: none; */
 }
 
 
