@@ -15,6 +15,7 @@
     --btn-filter-bcg-color: #F5F4FA;
     --btn-filter-border-color: transparent;
     --header-line-border-color: #ECECEC;
+    --project-caption-border-color: #EEEEEE;
 }
 
 html {
@@ -34,8 +35,8 @@ body {
     color: var(--primary-text-color);
 
     font-family: 'Roboto', sans-serif;
-    
-    font-size: 14px;    
+    font-size: 14px;
+
 }
 
 /* Styles reset*/
@@ -61,6 +62,7 @@ p {
 .link {
     text-decoration: none;
     font-style: none;
+    /* outline: currentColor; */
 }
 
 .visually-hidden {
@@ -184,10 +186,17 @@ p {
 /* Main */
 
 .slogan {
+    max-width: 1600px;
+    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-
+    margin-left: auto;
+    margin-right: auto;
+    
     background-color: var(--secondary-background-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-slogan.jpg);
+    background-size: cover;
+    background-position: center;
 
     text-align: center;
 }
@@ -216,6 +225,7 @@ p {
 
     background-color: var(--accent-color);
     color: var(--btn-accent-text-color);
+    border-color: var(--accent-color);
 
     border-width: 0px;
     font-family: inherit;
@@ -225,6 +235,11 @@ p {
     letter-spacing: 0.06em;
 
     cursor: pointer;
+}
+
+.btn-order:hover,
+.btn-order:focus {
+    outline: 0;
 }
 
     /* Section */
@@ -312,6 +327,10 @@ p {
     text-align: center;
 }
 
+.team .item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 
 .team .card {
     padding-top: 30px;
@@ -375,6 +394,10 @@ p {
     background-color: var(--accent-color);
     color: var(--btn-accent-text-color);
     border-color: var(--btn-filter-border-color);
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
+    outline: none;
 }
 
 
@@ -421,9 +444,13 @@ p {
     padding: 20px 24px;
 
     width: 370px;
-    border-left: 1px solid #EEEEEE;
-    border-right: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid var(--project-caption-border-color);
+    border-right: 1px solid var(--project-caption-border-color);
+    border-bottom: 1px solid var(--project-caption-border-color);
+}
+
+.card:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .card .img {
