@@ -179,17 +179,34 @@ p {
 }
 
 .contacts .link {
-    display: inline-block;
+    display: flex;
+    gap: 10px;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
 
     color: var(--primary-text-color);
+
+    outline: 1px solid tomato;
 }
 
 .contacts .link:hover,
 .contacts .link:focus {
-    color: var(--accent-color);
+    color: var(--accent-color);    
 }
+
+.contacts .icon {
+    fill: currentColor;
+}
+
+
+/* .contacts .mail::before {
+    content: '';
+    display: inline-block;
+    background-image: url(../images/icons.svg#icon-envelope);
+    width: 16px;
+    height: 12px;
+} */
 
 /* Main */
 
