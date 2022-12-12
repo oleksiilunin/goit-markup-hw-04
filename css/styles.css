@@ -11,7 +11,8 @@
     --slogan-text-color: #FFFFFF;
     --advantages-box-background-color: #F5F4FA;
     --team-background-color: #F5F4FA;
-    --socials-icon-fill: #AFB1B8;
+    --team-icon-fill: #AFB1B8;
+    --team-accent-icon-fill: #FFFFFF;
     --clients-icon-fill: #AFB1B8;
     --clients-border-color: #AFB1B8;
     --btn-accent-text-color: #FFFFFF;
@@ -20,7 +21,8 @@
     --project-caption-border-color: #EEEEEE;
     --footer-text-color: #FFFFFF96;
     --location-text-color: #FFFFFF;
-    --socials-text-color: #FFFFFF;
+    --footer-socials-text-color: #FFFFFF;
+    --footer-icon-fill: #FFFFFF;
     --footer-icon-bcg-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -399,7 +401,8 @@ p {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    letter-spacing: 0.03em;   
+    letter-spacing: 0.03em;
+    margin-bottom: 16px; 
 }
 
 .team .img {
@@ -606,17 +609,6 @@ p {
 
         /* Socials */
 
-.socials-title {
-    margin-bottom: 20px;
-
-    color: var(--socials-text-color);
-
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-}
-
 .socials-list {
     display: flex;
     gap:10px;
@@ -626,8 +618,6 @@ p {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-
-    background-color: var(--footer-icon-bcg-color);
 }
 
 .socials .link {
@@ -637,15 +627,52 @@ p {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-
 }
 
-.socials .link:hover {
+            /*Team Socials*/
+
+.team  .socials-list {
+    justify-content: center;
+}
+
+.team-socials .socials-item {
+    
+    background-color: var(--main-background-color);  
+}
+
+.team .link {
+    fill: var(--team-icon-fill);
+}
+
+.team-socials .link:hover {
+    background-color: var(--accent-color); 
+    fill: var(--team-accent-icon-fill);
+}
+
+
+            /* Footer Socials*/
+
+.footer-socials .title {
+    margin-bottom: 20px;
+
+    color: var(--footer-socials-text-color);
+
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.footer-socials .socials-item {
+    background-color: var(--footer-icon-bcg-color);
+}
+
+.footer-socials .link:hover {
     background-color: var(--accent-color);
 }
 
-.socials-list .icon {
+.footer-socials .icon {
     display: block;
 
-    fill: var(--socials-text-color);
+    fill: var(--footer-icon-fill);
 }
