@@ -104,7 +104,6 @@ p {
 /*Header*/
 
 .header {
-    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
 
@@ -206,14 +205,6 @@ p {
 }
 
 
-/* .contacts .mail::before {
-    content: '';
-    display: inline-block;
-    background-image: url(../images/icons.svg#icon-envelope);
-    width: 16px;
-    height: 12px;
-} */
-
 /* Main */
 
 .slogan {
@@ -271,7 +262,6 @@ p {
     /* Section */
 
 .section {
-    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 94px;
@@ -555,7 +545,6 @@ p {
 /* Footer */
 
 .footer {
-    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 60px;
