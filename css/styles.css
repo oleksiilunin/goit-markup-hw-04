@@ -647,6 +647,8 @@ p {
 .team-socials .link:hover {
     background-color: var(--accent-color); 
     fill: var(--team-accent-icon-fill);
+    box-shadow: none;
+    
 }
 
 
